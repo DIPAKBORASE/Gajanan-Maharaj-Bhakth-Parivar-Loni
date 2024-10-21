@@ -48,10 +48,10 @@
                                     <h3 class="tm-gold-text tm-form-title">Contact Us</h3>
                                     <p class="tm-form-description">Please get in touch with us.</p> 
                                     <ul class="contact-info p-0">
-                                            <li><a href="https://www.facebook.com/groups/1905666336394273/" target="_blank"><i class="fab fa-facebook-f"></i></a><span>Gajanan Maharaj Bhakta Parivar Group</span></li>
+                                            <li><a href="https://www.facebook.com/groups/1905666336394273/" target="_blank"><i class="fab fa-facebook-f"></i></a><span>Gajanan Maharaj Bhakta Parivar Group Loni</span></li>
                                             <!--<li><a href="https://twitter.com/gajananmaharajbhaktaparivar" target="_blank"><i class="fab fa-twitter"></i></a><span>Follow Us on Gajanan Maharaj Bhakta Parivar</span></li> -->
-                                            <li><i class="fa fa-phone"></i><span>+1 908-336-2884</span></li>
-                                            <li><i class="fa fa-envelope"></i><span>gmbhaktparivar@gmail.com</span></li>
+                                            <li><i class="fa fa-phone"></i><span>9423953502</span></li>
+                                            <li><i class="fa fa-envelope"></i><span>gmbhaktparivarloni@gmail.com</span></li>
                                             <!--<li><i class="fa fa-map-marker"></i><span>1 Main Road, Plainsboro, NJ 08536</span></li>-->
                                         </ul>
         <p>        
@@ -68,8 +68,6 @@
                         <section>
                             <h3 class="tm-gold-text tm-form-title">Write Us</h3>
                             <p class="tm-form-description">If you would like to know any details about our <b>Parivar</b> or <b>Gajanan Maharaj</b>, please write us.</p> 
-
-
                             <form name="contact-form" id="contactForm" action="sendemail.php" method="POST" class="tm-contact-form">                                
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name"  required/>
@@ -83,7 +81,6 @@
                                 <div class="form-group">
                                     <textarea id="message" name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
                                 </div>
-                            
                                 <button type="submit" class="tm-btn">Submit</button>                          
                             </form>   
                         </section>
@@ -107,7 +104,7 @@
                 <div class="row">
                     
                     <div class="col-xs-6 tm-copyright-col">
-                        <p class="tm-copyright-text">Gajanan Maharaj Bhakta Parivar &copy; 2019 </p>
+                        <p class="tm-copyright-text">borasedipak18@gmail.com</p>
                     </div>
                     <div class="social-media col-xs-6">
                         <a href="https://www.youtube.com/channel/UCNrJWmClJ6spLpwmLDyq2iA" target="_blank"><i class="fab fa-youtube" style="color:red"></i></a>
@@ -115,7 +112,7 @@
                         <a href="https://www.facebook.com/groups/1905666336394273/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <!--<a href="https://twitter.com/gajananmaharajbhaktaparivar" target="_blank"><i class="fab fa-twitter"></i></a>-->
                         <a href="mailto:gmbhaktparivar@gmail.com"><i class="fas fa-envelope" style="color:white"></i></a>
-                        <a href="#"><i class="fas fa-mobile-alt"></i> : +1 908-336-2884</a>
+                        <a href="#"><i class="fas fa-mobile-alt"></i> : 7666874346</a>
                     </div>
                 </div>
             </div>

@@ -1,97 +1,101 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <title>Gajanan Maharaj Bhakta Parivar</title>
-        <!-- load stylesheets -->
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
-        <!-- Google web font "Open Sans" -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- Bootstrap style -->
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="./index.css">
-        
-        <!-- Templatemo style -->
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-            integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-            crossorigin="anonymous">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
-        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-            rel="stylesheet">
 
-        <script type="text/javascript" async
-            src="https://www.google-analytics.com/analytics.js"></script>
-        <script type="text/javascript" async
-            src="https://www.googletagmanager.com/gtag/js?id=G-MKX3CB5439&amp;l=dataLayer&amp;cx=c"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <!-- jQuery (https://jquery.com/download/) -->
-        <script> 
-                window.PageName = "Home";
-                $(function(){
-                  $(".tm-header").load("header.html"); 
-                  $(".tm-footer").load("footer.html"); 
-                });
-        </script>
-        <style type="text/css">
-@font-face {
-  font-weight: 400;
-  font-style:  normal;
-  font-family: circular;
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>Gajanan Maharaj Bhakta Parivar</title>
+    <!-- load stylesheets -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./index.css">
 
-  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
-}
+    <!-- Templatemo style -->
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+        rel="stylesheet">
 
-@font-face {
-  font-weight: 700;
-  font-style:  normal;
-  font-family: circular;
+    <script type="text/javascript" async
+        src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async
+        src="https://www.googletagmanager.com/gtag/js?id=G-MKX3CB5439&amp;l=dataLayer&amp;cx=c"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- jQuery (https://jquery.com/download/) -->
+    <script>
+        window.PageName = "Home";
+        $(function() {
+            $(".tm-header").load("header.html");
+            $(".tm-footer").load("footer.html");
+        });
+    </script>
+    <style type="text/css">
+        @font-face {
+            font-weight: 400;
+            font-style: normal;
+            font-family: circular;
 
-  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
-}
-        </style>
-    </head>
-    <body>
-        <div class="tm-header logo">
-            <script>
-                var page = window.PageName;                               
-                var nav = document.querySelector('.navbar-nav');
-                var navChildNodes = nav.getElementsByClassName('nav-item');
-                
-                for (var i = 0; i < navChildNodes.length; i++) {
+            src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+        }
 
-                    if (navChildNodes[i].innerText == page) {
-                        navChildNodes[i].classList.add("active");                   
-                    }
-                    else {
-                        navChildNodes[i].classList.remove("active");
-                    }        
+        @font-face {
+            font-weight: 700;
+            font-style: normal;
+            font-family: circular;
+
+            src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tm-header logo">
+        <script>
+            var page = window.PageName;
+            var nav = document.querySelector('.navbar-nav');
+            var navChildNodes = nav.getElementsByClassName('nav-item');
+
+            for (var i = 0; i < navChildNodes.length; i++) {
+
+                if (navChildNodes[i].innerText == page) {
+                    navChildNodes[i].classList.add("active");
+                } else {
+                    navChildNodes[i].classList.remove("active");
                 }
-            </script>
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async
-                src="https://www.googletagmanager.com/gtag/js?id=UA-150242746-1"></script>
-            <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-150242746-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-150242746-1');
-            </script>
-            <?php
-                include './navbar.php'
-            ?>
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-150242746-1');
+        </script>
+        <?php
+            include './navbar.php'
+        ?>
         <div class="tm-home-img-container tm-top-margin-100">
             <img src="imgs/front-photo.jpg" alt="Image"
                 class="img-fluid tm-home-img">
@@ -106,16 +110,11 @@
                         <p class="tm-subtitle">।। संत हेच भूमीवरचे चालते बोलते
                             <span style="white-space: nowrap">परमेश्वर ।।</span>
                         </p>
-                        <p>“Gajanan Maharaj Bhakta Parivar” is a USA based group
-                            actively working since 2017. In fact, it is closely
-                            knitted family of our beloved Gajanan Mauli.
-                            Although the group is based in New Jersey, the
-                            Devotees associated with this group are from various
-                            places in the world.</p>
+                        <p>“Gajanan Maharaj Bhakta Parivar” is a Loni-based group that has been actively working since 2017. It is, in essence, a closely-knit family of our beloved Gajanan Mauli devotees. While the group is rooted in Loni, its devotees come from various parts of the world.</p>
                         <img
-                            src="img/prakatdin2023banner.jpeg"
+                            src="imgs/front-photo.jpg"
                             alt="Image"
-                            class="tm-margin-b-20 Img-fluid"
+                            class="tm-margin-b-20 m-t-3 Img-fluid"
                             style="display:none">
                     </div>
                 </div>
@@ -138,7 +137,7 @@
                         </div>
                         <div style="display:block; justify-content: center;">
                             <img
-                                src="img/prakatdin2024.JPG"
+                                src="imgs/img-3.jpg"
                                 alt="Image"
                                 class="tm-margin-b-20 img-fluid"
                                 width="100%"
@@ -166,7 +165,7 @@
                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
                             <div>
                                 <h3 class="tm-gold-text tm-title">Gajanan
-                                    Maharaj Bhakta Parivar, USA</h3>
+                                    Maharaj Bhakta Parivar, Loni</h3>
                                 <p>We, the devotees (भक्त) of Shree Gajanan
                                     Maharaj, follow HIS teachings of spiritual
                                     devotion (भक़्ती) and voluntary service
@@ -198,7 +197,7 @@
                     <div class="flex-container ">
                         <div>
                             <div class="tm-content-box2">
-                                <img src="img/2tm-img-570x220-0220.JPG"
+                                <img src="imgs/prakatDin.jpg"
                                     alt="Image"
                                     class="tm-margin-b-20 img-fluid">
                                 <h4
@@ -229,13 +228,13 @@
                                             guaranteed 😊</p>
                                     </div>
                                 </div>
-                                <a class="btn-readmore tm-btn"
-                                    div-id="Prakatdin-showless">Read More</a>
+                                <!-- <a class="btn-readmore tm-btn"
+                                    div-id="Prakatdin-showless">Read More</a> -->
                             </div>
                         </div>
                         <div>
                             <div class="tm-content-box">
-                                <img src="img/RishiPanchami-380x220.jpg"
+                                <img src="imgs/mahadashmi-ustav.jpg"
                                     alt="Image"
                                     class="tm-margin-b-20 img-fluid">
                                 <h4
@@ -274,12 +273,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="btn-readmore tm-btn"
-                                div-id="Mahasamadhi-showless">Read More</a>
+                            <!-- <a class="btn-readmore tm-btn"
+                                div-id="Mahasamadhi-showless">Read More</a> -->
                         </div>
                         <div>
                             <div class="tm-content-box">
-                                <img src="img/tm-img-310x180-1.jpg" alt="Image"
+                                <img src="imgs/monthly-upasana.jpg" alt="Image"
                                     class="tm-margin-b-20 img-fluid">
                                 <h4 class="tm-margin-b-20 tm-gold-text">Monthly
                                     Upasana</h4>
@@ -326,13 +325,13 @@
                                             continues.</p>
                                     </div>
                                 </div>
-                                <a class="btn-readmore tm-btn"
-                                    div-id="upasana-showless">Read More</a>
+                                <!-- <a class="btn-readmore tm-btn"
+                                    div-id="upasana-showless">Read More</a> -->
                             </div>
                         </div>
                         <div>
                             <div class="tm-content-box">
-                                <img src="img/tm-img-310x180-2.jpg" alt="Image"
+                                <img src="imgs/food-donation.jpg" alt="Image"
                                     class="tm-margin-b-20 img-fluid">
                                 <h4 class="tm-margin-b-20 tm-gold-text">Food
                                     Donations</h4>
@@ -348,17 +347,16 @@
                                         food items are donated to right
                                         place.</div>
                                 </div>
-                                <a class="btn-readmore tm-btn"
-                                    div-id="food-showless">Read More</a>
+                                <!-- <a class="btn-readmore tm-btn"
+                                    div-id="food-showless">Read More</a> -->
                             </div>
                         </div>
                         <div>
                             <div class="tm-content-box">
-                                <img src="img/tm-img-310x180-3.jpg" alt="Image"
+                                <img src="imgs/yearly-event.jpg" alt="Image"
                                     class="tm-margin-b-20 img-fluid">
                                 <h4
-                                    class="tm-margin-b-20 tm-gold-text">Spiritual
-                                    Discussion</h4>
+                                    class="tm-margin-b-20 tm-gold-text">Yearly Dindi</h4>
                                 <div class="tm-margin-b-10"
                                     style="text-align:justify">
                                     Apart from Upasana, we also host a monthly
@@ -369,13 +367,13 @@
                                         participate in the call to share and
                                         acquire knowledge.</div>
                                 </div>
-                                <a class="btn-readmore tm-btn"
-                                    div-id="Spiritual-showless">Read More</a>
+                                <!-- <a class="btn-readmore tm-btn"
+                                    div-id="Spiritual-showless">Read More</a> -->
                             </div>
                         </div>
                         <div>
                             <div class="tm-content-box2">
-                                <img src="img/1tm-img-570x220-0220.JPG"
+                                <img src="imgs/group-parayan.jpg"
                                     alt="Image"
                                     class="tm-margin-b-20 img-fluid">
                                 <h4 class="tm-margin-b-20 tm-gold-text">Group
@@ -422,8 +420,8 @@
                                         </p>
                                     </div>
                                 </div>
-                                <a class="btn-readmore tm-btn"
-                                    div-id="Parayan-showless">Read More</a>
+                                <!-- <a class="btn-readmore tm-btn"
+                                    div-id="Parayan-showless">Read More</a> -->
                             </div>
                         </div>
                     </div>
@@ -439,8 +437,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-6 tm-copyright-col">
-                        <p class="tm-copyright-text">Gajanan Maharaj Bhakta
-                            Parivar © 2019</p>
+                        <p class="tm-copyright-text">borasedipak18@gmail.com</p>
                     </div>
                     <div class="social-media col-xs-6">
                         <a
@@ -458,7 +455,7 @@
                             <i class="fas fa-envelope" style="color:white"></i>
                         </a>
                         <a href="#">
-                            <i class="fas fa-mobile-alt"></i> : +1 908-336-2884
+                            <i class="fas fa-mobile-alt"></i> : 7666874346
                         </a>
                     </div>
                 </div>
@@ -474,7 +471,8 @@
         <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb">
             <section id="shadow-host-companion"></section>
         </div>
-    </body>
+</body>
+
 </html>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
