@@ -95,8 +95,8 @@
         </div>
     </nav>
 </div>
-<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
-<script src="js/bootstrap.min.js"></script> <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 
@@ -110,7 +110,7 @@
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
             <!-- Modal header -->
-            <div class="flex justify-between items-center p-5 border-b rounded-t dark:border-gray-600">
+            <div class="flex justify-between items-center p-2 border-b rounded-t dark:border-gray-600">
                 <h3 class="text-xl font-medium text-gray-900 dark:text-white">
                     Register
                 </h3>
@@ -122,18 +122,52 @@
             </div>
             <!-- Modal body -->
             <div class="p-6 space-y-6">
-                <form id="registerForm">
-                    <div class="mb-4">
-                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
-                        <input type="text" id="name" name="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white" required>
+                <form id="registerForm" action="register.php" method="POST" enctype="multipart/form-data">
+                    <div class="grid grid-cols-2 gap-4 mt-2">
+                        <div>
+                            <label for="petName" class="block text-sm font-medium text-gray-700">First Name</label>
+                            <input type="text" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="petName" name="pet_name" required>
+                        </div>
+                        <div>
+                            <label for="petBreed" class="block text-sm font-medium text-gray-700">Last Name</label>
+                            <input type="text" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="petBreed" name="pet_breed" required>
+                        </div>
                     </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white" required>
+                    <div class="grid grid-cols-2 gap-4 mt-2">
+                        <div>
+                            <label for="petName" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="text" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="petName" name="email" required>
+                        </div>
+                        <div>
+                            <label for="petBreed" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="text" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="petBreed" name="phone_number" required>
+                        </div>
                     </div>
-                    <div class="mb-4">
-                        <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
-                        <input type="password" id="password" name="password" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white" required>
+                    <div class="grid grid-cols-1 gap-4 mt-2">
+                        <div>
+                            <label for="petName" class="block text-sm font-medium text-gray-700">Address</label>
+                            <input type="text" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="petName" name="address" required>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 mt-2">
+                        <!-- Video Stream for Live Camera Preview -->
+                        <div>
+                            <label for="userImage" class="block text-sm font-medium text-gray-700">Capture a Photo</label>
+                            <video id="video" class="block w-full h-64 rounded-md border-gray-300 shadow-sm bg-gray-200" autoplay></video>
+                            <button type="button" id="snap" class="mt-2 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Take Photo</button>
+                        </div>
+
+                        <!-- Canvas to Display Captured Image -->
+                        <div>
+                            <canvas id="canvas" class="block w-full h-64 hidden rounded-md border-gray-300 shadow-sm"></canvas>
+                            <input type="hidden" id="capturedImage" name="captured_image">
+                        </div>
+
+                        <!-- Fallback for Mobile Devices (Allow File Upload) -->
+                        <div>
+                            <label for="uploadImage" class="block text-sm font-medium text-gray-700">Or Upload a Photo</label>
+                            <input type="file" id="uploadImage" name="upload_image" accept="image/*" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
                     </div>
                 </form>
             </div>
@@ -147,6 +181,36 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script>
+    // Access the camera and stream it to the video element
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const snap = document.getElementById('snap');
+    const capturedImage = document.getElementById('capturedImage');
+
+    navigator.mediaDevices.getUserMedia({
+            video: true
+        })
+        .then(stream => {
+            video.srcObject = stream;
+        })
+        .catch(err => {
+            console.error("Error accessing camera: ", err);
+        });
+
+    // Capture the photo from the video stream
+    snap.addEventListener('click', () => {
+        const context = canvas.getContext('2d');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        // Convert the canvas image to base64 and set it in a hidden input field
+        const imageData = canvas.toDataURL('image/png');
+        capturedImage.value = imageData;
+        canvas.classList.remove('hidden'); // Show the canvas with the captured image
+    });
+</script>
 </body>
 
 </html>
