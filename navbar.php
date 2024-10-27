@@ -104,15 +104,14 @@
 
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-
-<div id="registerModal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full flex items-center justify-center">
-    <div class="relative w-full max-w-md max-h-full">
+<div id="registerModal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-y-auto md:inset-0 min-h-screen flex items-start justify-center h-full">
+    <div class="relative w-full max-w-md my-4 h-full">
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
             <!-- Modal header -->
-            <div class="flex justify-between items-center p-2 border-b rounded-t dark:border-gray-600">
+            <div class="top-0 z-10 flex justify-between items-center p-2 border-b rounded-t dark:border-gray-600 bg-white dark:bg-gray-700">
                 <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                    Register
+                    नोंदणी करा
                 </h3>
                 <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="registerModal">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -121,65 +120,61 @@
                 </button>
             </div>
             <!-- Modal body -->
-            <div class="p-6 space-y-6">
+            <div class="p-6 space-y-6 overflow-y-auto max-h-[calc(100vh-16rem)]">
                 <form id="registerForm" action="register.php" method="POST" enctype="multipart/form-data">
-                    <div class="grid grid-cols-2 gap-4 mt-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                         <div>
-                            <label for="petName" class="block text-sm font-medium text-gray-700">First Name</label>
-                            <input type="text" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="petName" name="pet_name" required>
+                            <label for="firstName" class="block text-sm font-medium text-gray-700">पहिले नाव</label>
+                            <input type="text" class="mt-1 block w-full h-10 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="firstName" name="first_name" required>
                         </div>
                         <div>
-                            <label for="petBreed" class="block text-sm font-medium text-gray-700">Last Name</label>
-                            <input type="text" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="petBreed" name="pet_breed" required>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4 mt-2">
-                        <div>
-                            <label for="petName" class="block text-sm font-medium text-gray-700">Email</label>
-                            <input type="text" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="petName" name="email" required>
-                        </div>
-                        <div>
-                            <label for="petBreed" class="block text-sm font-medium text-gray-700">Phone Number</label>
-                            <input type="text" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="petBreed" name="phone_number" required>
+                            <label for="lastName" class="block text-sm font-medium text-gray-700">आडनाव</label>
+                            <input type="text" class="mt-1 block w-full h-10 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="lastName" name="last_name" required>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 gap-4 mt-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                         <div>
-                            <label for="petName" class="block text-sm font-medium text-gray-700">Address</label>
-                            <input type="text" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="petName" name="address" required>
+                            <label for="email" class="block text-sm font-medium text-gray-700">ईमेल</label>
+                            <input type="email" class="mt-1 block w-full h-10 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phoneNumber" class="block text-sm font-medium text-gray-700">फोन नंबर</label>
+                            <input type="tel" class="mt-1 block w-full h-10 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="phoneNumber" name="phone_number" required>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 gap-4 mt-2">
-                        <!-- Video Stream for Live Camera Preview -->
+                    <div class="grid grid-cols-1 gap-4 mt-4">
+                        <div>
+                            <label for="address" class="block text-sm font-medium text-gray-700">पत्ता</label>
+                            <input type="text" class="mt-1 block w-full h-10 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" id="address" name="address" required>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 mt-4">
                         <div>
                             <label for="userImage" class="block text-sm font-medium text-gray-700">Capture a Photo</label>
-                            <video id="video" class="block w-full h-64 rounded-md border-gray-300 shadow-sm bg-gray-200" autoplay></video>
+                            <video id="video" class="block w-full aspect-video rounded-md border-gray-300 shadow-sm bg-gray-200" autoplay></video>
                             <button type="button" id="snap" class="mt-2 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Take Photo</button>
                         </div>
 
-                        <!-- Canvas to Display Captured Image -->
                         <div>
-                            <canvas id="canvas" class="block w-full h-64 hidden rounded-md border-gray-300 shadow-sm"></canvas>
+                            <canvas id="canvas" class="block w-full aspect-video hidden rounded-md border-gray-300 shadow-sm"></canvas>
                             <input type="hidden" id="capturedImage" name="captured_image">
                         </div>
 
-                        <!-- Fallback for Mobile Devices (Allow File Upload) -->
                         <div>
                             <label for="uploadImage" class="block text-sm font-medium text-gray-700">Or Upload a Photo</label>
-                            <input type="file" id="uploadImage" name="upload_image" accept="image/*" class="mt-1 block w-full h-8 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                            <input type="file" id="uploadImage" name="upload_image" accept="image/*" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
                         </div>
                     </div>
                 </form>
             </div>
             <!-- Modal footer -->
-            <div class="flex justify-end p-6 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <div class=" bottom-0 flex justify-end p-6 border-t border-gray-200 rounded-b dark:border-gray-600 bg-white dark:bg-gray-700">
                 <button type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800" onclick="document.getElementById('registerForm').submit();">Submit</button>
                 <button type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-blue-300 rounded-lg border border-gray-200 text-sm px-5 py-2.5 focus:outline-none dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-600" data-modal-hide="registerModal">Cancel</button>
             </div>
         </div>
     </div>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 <script>
     // Access the camera and stream it to the video element
